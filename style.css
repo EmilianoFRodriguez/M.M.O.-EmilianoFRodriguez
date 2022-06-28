@@ -1,0 +1,396 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+    /* Colores y Fuentes-------------------------
+            background-color: #2d2d2dc3
+                              #070f17e0; MENU
+                background-color: #183a5ed8; MENNU OK
+
+            background-color: #070f17; FOOTER
+            background-color: #070f17b5; main
+    */
+
+.arrow-up {
+    width: 40px;
+    height: auto;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 5px;
+}
+.container nav ul li a img {
+    height: 20px;
+    padding-right: 5px;
+}
+    /* Grids -----------------------------------*/
+.novedades--news {
+    display: grid;
+    grid-template-areas: 
+        'img1 img2 img3'
+        'text1 text2 text3'
+    ;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 2.5fr 4fr;
+    gap: 15px;
+}
+.durlock {
+    background-image: url(imagenes/Fondos/fondo-blue-gastado-vert.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-areas: 
+    'texto1 imgDurlock1'
+    'imgDurlock2 texto2'
+    ;
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: repeat(auto);
+    gap: 30px;
+}
+.footer {
+    grid-area: footer;
+    display: grid;
+    width: 100%;
+    background-color: #070f17;
+    color: white;
+    grid-template-areas: 
+        'maps text'
+        'maps icon'
+    ;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 4fr 1fr;
+}
+    /*header -------------------------------*/
+.container header { 
+    background-image: url(/Imagenes/Fondos/fondo-blue-gastado.jpg);
+    border: solid black 1px;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+}
+.container header h1 {
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px 30px;
+    background-color: #070f17e0;
+    border-radius: 15px;
+}
+.container header nav {
+    display: flex;
+    width: 100%;
+}
+.navBar {
+    width: 50%;
+    padding-left: 5px;
+}
+.navBar li {
+    height: 25px;
+    width: 170px ;
+    background-color: #070f17e0;
+    margin: 3px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.navBar li a {
+    text-decoration: none;
+    color: white;
+}
+.listaTareas {
+    width: 50%;
+    text-align: right;
+    list-style: none;
+}
+.listaTareas li {
+    height: 20px;
+    width: 170px;
+    background-color: #070f17e0;
+    margin: 3px 5px 3px auto;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+.contacto {
+    width: 100px;
+    padding-right: 5px;
+    text-align: center;
+    margin: 0 5px 5px auto;
+    color: white;
+    background-color: #070f17e0;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+    /*trabajos -----------------------------*/
+.ultimosTrabajos--news {
+    /* background-image: url(imagenes/Bosquejo-azul.jpg); */
+    background-image: url(imagenes/The-Original-Blueprints.jpg);
+    /* background-color: #183a5e41; */
+    color: whitesmoke;
+    width: 90%;
+    height: auto;
+    padding: 0% 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+.ultimosTrabajos--news section div h2 {
+    padding: 15px 0;
+}
+.containerReg {
+    display: flex;
+    justify-content: center;
+}
+.containerSeg{
+    display: flex;
+    justify-content: flex-end;
+}
+.containerDiseño div , .containerReg div , .containerSeg div {
+    /* border: solid white 1px; */
+    border-radius: 20px;
+    background-color: #070f17;
+    width: 50%;
+    height: auto;
+    padding: 2% 7%;
+    margin: 15px 0;
+}
+.containerReg div iframe , .containerDiseño div iframe {
+    height: 250px;
+    width: 100%;
+}
+.containerSeg div img {
+    width: 80%;
+    padding: 0 10%;
+}
+.ultimosTrabajos--news section a {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #070f17;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+    /* Novedades ---------------------------*/
+.novedades--news {
+    background-color: #101c29;
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    color: whitesmoke;
+}
+.newsImg1 {
+    grid-area: img1;
+    text-align: center;
+    overflow: hidden;
+}
+.newsImg2 {
+    grid-area: img2;
+    text-align: center;
+    overflow: hidden;
+}
+.newsImg3 {
+    grid-area: img3;
+    text-align: center;
+    overflow: hidden;
+}
+.novedadesTex1 {
+    grid-area: text1;
+}
+.novedadesTex2 {
+    grid-area: text2;
+}
+.novedadesTex3 {
+    grid-area: text3;
+}
+.novedades--news a {
+    color: whitesmoke;
+}
+.novedades--news h3 {
+    text-align: center;
+    padding: 10px 3px;
+}
+.novedades--news p {
+    text-align: center;
+    padding: 5px 15px;
+}
+.newsImg1 img , .newsImg2 img , .newsImg3 img {
+    height: 200px;
+    width: auto;
+   margin: auto;
+}
+    /* Novedades 2  ------------------------*/
+.novedades {
+    background-color: #183a5ed8;
+}
+.fachada {
+    background-image: url(imagenes/Fondos/materiales-blue.jpg);
+    padding-bottom: 5%;
+}
+.separador {
+    height: 30px;
+}
+.fachada h2 {
+    width: 75%;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    background-color: #f5f5f585;
+}
+.fachada img {
+    width: 60%;
+    margin: 5% 20%;
+}
+.fachada p {
+    width: 80%;
+    padding: 2%;
+    margin: 15px 10%;
+    background-color: #f5f5f56a;
+}
+.fachada h4 {
+    text-align: center;
+    background-color: #f5f5f585;
+    width: 25%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 30px;
+
+}
+.fachada h3 {
+    width: 40%;
+    margin: 10% auto 0;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f5f5f585;
+}
+.fachada ul {
+    background-color: #f5f5f56a;
+    width: 70%;
+    padding: 5%;
+    margin: 2% 10% 10%;
+}
+.fachada ul li {
+    padding-top: 15px;
+}
+.durlock img {
+    width: 70%;
+    height: auto;
+    margin: 0 15%;
+    text-align: center;
+}
+.durlock p {
+    background-color: #f5f5f585;
+    padding: 2% 10%;
+    font-size: large;
+}
+.durlock h2 {
+    text-align: center;
+    padding: 15px 0 5px;
+    background-color: #f5f5f585;
+}
+.texto1 {
+    grid-area: texto1;
+    padding: 10%;
+}
+.imgDurlock1 {
+    grid-area: imgDurlock1;
+}
+.texto2 {
+    grid-area: texto2;
+    padding: 10%;
+}
+.imgDurlock2 {
+    grid-area: imgDurlock2;
+}
+.jardin {
+    background-image: url(imagenes/Fondos/plantas-blue.jpg);
+}
+.jardin h2 {
+    width: 75%;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    background-color: #f5f5f585;
+}
+.jardin img {
+    width: 60%;
+    margin: 5% 20%;
+}
+.jardin p {
+    width: 80%;
+    padding: 2%;
+    margin: 15px 10%;
+    background-color: #f5f5f56a;
+}
+.jardin h4 {
+    text-align: center;
+    background-color: #f5f5f585;
+    width: 25%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 30px;
+
+}
+.jardin h3 {
+    width: 40%;
+    margin: 10% auto 0;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f5f5f585;
+}
+
+    /*footer -------------------------------*/
+.borde {
+    width: 100%;
+    height: 15px;
+    background-color: #183a5e;
+    background-image: url(imagenes/footer-strip.png);
+}
+.footer iframe {
+    grid-area: maps;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0% 15px;
+}
+.footer ul li a img {
+    height: 30px;
+}
+.footerText {
+    grid-area: text;
+    text-align: center;
+    margin: auto;
+}
+.footer ul {
+    grid-area: icon;
+    list-style: none;
+    padding: 1px 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
