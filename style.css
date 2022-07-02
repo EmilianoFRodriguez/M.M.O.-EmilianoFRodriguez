@@ -163,9 +163,19 @@
 .ultimosTrabajos--news section a {
     text-decoration: none;
     color: whitesmoke;
+}
+.verMas {
     background-color: #070f17;
+    text-align: center;
+    width: 60px;
     border-radius: 5px;
     padding: 5px 10px;
+    margin-left: 50px;
+    transition: all 1s;
+    
+}
+.verMas:hover {
+    transform: scale(1.5);
 }
     /* Novedades ---------------------------*/
 .novedades--news {
