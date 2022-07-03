@@ -83,15 +83,21 @@
 }
 .navBar {
     width: 50%;
-    padding-left: 5px;
+    padding-left: 25px;
 }
 .navBar li {
     height: 25px;
     width: 170px ;
+    list-style: none;
     background-color: #070f17e0;
     margin: 3px;
     border-radius: 10px;
     padding-left: 10px;
+    transition: all .3s;
+}
+.navBar li:hover {
+    background-color: #04090e;
+    transform: scale(1.2);
 }
 .navBar li a {
     text-decoration: none;
@@ -175,7 +181,7 @@
     
 }
 .verMas:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
     /* Novedades ---------------------------*/
 .novedades--news {
@@ -211,6 +217,9 @@
 }
 .novedades--news a {
     color: whitesmoke;
+}
+.novedades--news a:active {
+    color: #070f17;
 }
 .novedades--news h3 {
     text-align: center;
@@ -355,9 +364,9 @@
 .footer iframe {
     grid-area: maps;
     width: 100%;
-    height: auto;
+    height: 175px;
     margin: auto;
-    padding: 0% 15px;
+    padding: 15px;
 }
 .footer ul li a img {
     height: 30px;
@@ -370,7 +379,7 @@
 .footer ul {
     grid-area: icon;
     list-style: none;
-    padding: 1px 20%;
+    padding: 0px 20%;
     display: flex;
     justify-content: space-evenly;
 }
